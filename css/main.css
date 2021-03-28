@@ -1025,4 +1025,26 @@ h6 {
   fill: #ffffff;
   margin-left: 10px;
 }
+
+.menu-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  padding: 48px 40px;
+  background-color: #fff;
+  z-index: 999;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  -webkit-transition: -webkit-transform 250ms var(--cubic);
+  transition: -webkit-transform 250ms var(--cubic);
+  transition: transform 250ms var(--cubic);
+  transition: transform 250ms var(--cubic), -webkit-transform 250ms var(--cubic);
+}
+
+.menu-container.is-open {
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+}
 /*# sourceMappingURL=main.css.map */
