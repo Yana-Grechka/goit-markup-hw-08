@@ -86,3 +86,17 @@
   fill: #ffffff;
   margin-left: 10px;
 }
+
+@media screen and (min-width: 768px) {
+  .container--display {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .footer-address {
+    margin-right: 165px;
+  }
+}
+
+// .footer-network {
+// }
