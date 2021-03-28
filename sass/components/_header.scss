@@ -27,9 +27,17 @@
   letter-spacing: 0.02em;
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 768px) {
   .header-nav {
     display: none;
+  }
+}
+
+@media screen and (min-width: 766px) {
+  .header-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
 }
 

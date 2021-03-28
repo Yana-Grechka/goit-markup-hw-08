@@ -15,12 +15,18 @@
 </head>
 <body>
     <header class="header">
-        <div class="container main-nav">
+    <div class="container main-nav">
+        <a class="logo" href="./index.html"><span class="logo__color">Web</span>Studio</a>
+        <button type="button" class="menu-button js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+            <svg class="contacts__icon" width="40" height="40">
+                <use href="./images/sprite.svg#menu-open"></use>
+            </svg></button>
+        <div class="header-nav">
             <nav class="navigation">
-                <a class="logo" href="./index.html"><span class="logo__color">Web</span>Studio</a>
+                <!-- <a class="logo" href="./index.html"><span class="logo__color">Web</span>Studio</a> -->
                 <ul class="menu">
-                    <li class="menu__item"><a class="menu__link" href="./index.html">Студия</a></li>
-                    <li class="menu__item"><a class="menu__link current" href="./portfolio.html">Портфолио</a></li>
+                    <li class="menu__item"><a class="menu__link current" href="./index.html">Студия</a></li>
+                    <li class="menu__item"><a class="menu__link" href="./portfolio.html">Портфолио</a></li>
                     <li class="menu__item"><a class="menu__link" href="#">Контакты</a></li>
                 </ul>
             </nav>
@@ -35,6 +41,8 @@
                         </svg>+38 096 111 11 11</a></li>
             </ul>
         </div>
+    
+    </div>
     </header>
     <main>
             <section class="portfolio">
@@ -60,7 +68,7 @@
             <ul class="project">
                 <li  class="project__item">
                     <a class="project__link" href="#"><div class="project__thumb">
-                        <img class="project__img" src="./images/project1.jpg" alt="проект 1" width="370" >
+                        <img class="project__img" src="./images/prj1.jpg" alt="проект 1"  srcset="./images/prj1@2x.jpg 2x, ./images/prj1.jpg 1x">
                         <div class="project__text">
                             <p>Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового
                                 шпионажа и атак на защищённые сервера конкурентов.</p>
@@ -72,7 +80,7 @@
                 </li>
                 <li  class="project__item">
                     <a class="project__link" href="#"><div class="project__thumb">
-                        <img class="project__img" src="./images/project2.jpg" alt="проект 2"  width="370">
+                        <img class="project__img" src="./images/prj2.jpg" alt="проект 2" srcset="./images/prj2@2x.jpg 2x, ./images/prj2.jpg 1x">
                         <div class="project__text">
                             <p>Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового
                                 шпионажа и атак на защищённые сервера конкурентов.</p>
@@ -86,7 +94,7 @@
                 <li  class="project__item">
                     <a  class="project__link"  href="#">
                         <div class="project__thumb">
-                            <img class="project__img" src="./images/project3.jpg" alt="проект 3" width="370">
+                            <img class="project__img" src="./images/prj3.jpg" alt="проект 3" wsrcset="./images/prj3@2x.jpg 2x, ./images/prj3.jpg 1x">
                     <div class="project__text"><p>Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового
                     шпионажа и атак на защищённые сервера конкурентов.</p></div>
                 </div>
@@ -95,7 +103,7 @@
                 </li>
                 <li  class="project__item">
                     <a class="project__link" href="#"><div class="project__thumb">
-                        <img class="project__img" src="./images/progect4.jpg" alt="проект 4" width="370">
+                        <img class="project__img" src="./images/prj4.jpg" alt="проект 4" srcset="./images/prj4@2x.jpg 2x, ./images/prj4.jpg 1x">
                         <div class="project__text">
                             <p>Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового
                                 шпионажа и атак на защищённые сервера конкурентов.</p>
@@ -105,7 +113,8 @@
                     <p class="project__style">Маркетинг</p></div></a>
                 </li>
                 <li  class="project__item">
-                    <a class="project__link" href="#"><div class="project__thumb"><img class="project__img" src="./images/project5.jpg" alt="проект 5"  width="370">
+                    <a class="project__link" href="#"><div class="project__thumb">
+                        <img class="project__img" src="./images/prj5.jpg" alt="проект 5"  srcset="./images/prj5@2x.jpg 2x, ./images/prj5.jpg 1x">
                         <div class="project__text">
                             <p>Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового
                                 шпионажа и атак на защищённые сервера конкурентов.</p>
@@ -115,7 +124,7 @@
                     <p class="project__style">Приложение</p></div></a>
                 </li>
                 <li  class="project__item">
-                    <a class="project__link" href="#"><div class="project__thumb"><img class="project__img" src="./images/project6.jpg" alt="проект 6" width="370">
+                    <a class="project__link" href="#"><div class="project__thumb"><img class="project__img" src="./images/prj6.jpg" alt="проект 6" srcset="./images/prj6@2x.jpg 2x, ./images/prj6.jpg 1x">
                         <div class="project__text">
                             <p>Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового
                                 шпионажа и атак на защищённые сервера конкурентов.</p>
@@ -125,7 +134,7 @@
                     <p class="project__style">Веб-сайт</p></div></a>
                 </li>
                 <li  class="project__item">
-                    <a class="project__link" href="#"><div class="project__thumb"><img class="project__img" src="./images/project7.jpg" alt="проект 7" width="370">
+                    <a class="project__link" href="#"><div class="project__thumb"><img class="project__img" src="./images/prj7.jpg" alt="проект 7" srcset="./images/prj7@2x.jpg 2x, ./images/prj7.jpg 1x">
                         <div class="project__text">
                             <p>Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового
                                 шпионажа и атак на защищённые сервера конкурентов.</p>
@@ -135,7 +144,7 @@
                     <p class="project__style">Дизайн</p></div></a>
                 </li>
                 <li  class="project__item">
-                    <a class="project__link" href="#"><div class="project__thumb"><img class="project__img" src="./images/project8.jpg" alt="проект 8" width="370">
+                    <a class="project__link" href="#"><div class="project__thumb"><img class="project__img" src="./images/prj8.jpg" alt="проект 8" srcset="./images/prj8@2x.jpg 2x, ./images/prj8.jpg 1x">
                         <div class="project__text">
                             <p>Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового
                                 шпионажа и атак на защищённые сервера конкурентов.</p>
@@ -147,7 +156,7 @@
                 </a>
                 </li>
                 <li  class="project__item">
-                    <a class="project__link" href="#"><div class="project__thumb"><img class="project__img" src="./images/project9.jpg" alt="проект 9" width="370">
+                    <a class="project__link" href="#"><div class="project__thumb"><img class="project__img" src="./images/prj9.jpg" alt="проект 9" srcset="./images/prj9@2x.jpg 2x, ./images/prj9.jpg 1x">
                         <div class="project__text">
                             <p>Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового
                                 шпионажа и атак на защищённые сервера конкурентов.</p>
