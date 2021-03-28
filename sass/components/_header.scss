@@ -79,6 +79,10 @@
     font-weight: 500;
     font-size: 12px;
     line-height: 14px;
+
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
   }
 }
 
@@ -106,9 +110,25 @@
   margin-right: 20px;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1199px) {
   .main-nav__social {
     display: none;
+  }
+
+  .contacts {
+    display: flex;
+
+  }
+
+  .contacts__item {
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
   }
 }
 
@@ -116,6 +136,7 @@
   .function {
     display: none;
   }
+
 }
 
 .contacts__icon {
@@ -129,9 +150,12 @@
 }
 
 .contacts__link {
-  //   display: flex;
-  //   align-items: center;
-  //   padding: 32px 0;
+  transition: color 250ms var(--cubic);
+
+  &:hover,
+  &:focus {
+    color: var(--blue-text);
+  }
 }
 
 .current {

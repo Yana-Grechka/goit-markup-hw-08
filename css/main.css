@@ -190,6 +190,9 @@ h6 {
     font-size: 12px;
     line-height: 14px;
   }
+  .contacts__item:not(:last-child) {
+    margin-bottom: 10px;
+  }
 }
 
 .contacts__icon {
@@ -224,9 +227,22 @@ h6 {
   margin-right: 20px;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1199px) {
   .main-nav__social {
     display: none;
+  }
+  .contacts {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .contacts__item {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .contacts__item:not(:last-child) {
+    margin-right: 30px;
   }
 }
 
@@ -243,6 +259,15 @@ h6 {
 
 .contacts__icon:hover, .contacts__icon:focus {
   fill: var(--blue-text);
+}
+
+.contacts__link {
+  -webkit-transition: color 250ms var(--cubic);
+  transition: color 250ms var(--cubic);
+}
+
+.contacts__link:hover, .contacts__link:focus {
+  color: var(--blue-text);
 }
 
 .current {
@@ -643,6 +668,16 @@ h6 {
     margin-top: -30px;
     margin-left: -30px;
   }
+}
+
+@media screen and (min-width: 768px) and (min-width: 1199px) {
+  .team__list {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+}
+
+@media screen and (min-width: 768px) {
   .team__item {
     -ms-flex-preferred-size: calc(100% / 2 - 30px);
         flex-basis: calc(100% / 2 - 30px);
@@ -972,6 +1007,12 @@ h6 {
 .clients__link:hover, .clients__link:focus {
   fill: var(--blue-text);
   border: 1px solid var(--blue-text);
+}
+
+@media screen and (min-width: 1199px) {
+  .clients__link {
+    width: 170px;
+  }
 }
 
 @media screen and (max-width: 767px) {

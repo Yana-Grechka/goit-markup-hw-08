@@ -11,11 +11,6 @@
   margin-top: -30px;
 }
 
-// @media screen and (max-width: 767px) {
-//   .clients__list {
-//     width: 450px;
-//   }
-// }
 
 .clients__link {
   display: flex;
@@ -34,6 +29,11 @@
   &:focus {
     fill: var(--blue-text);
     border: 1px solid var(--blue-text);
+  }
+}
+@media screen and (min-width: 1199px) {
+  .clients__link {
+    width: 170px;
   }
 }
 
