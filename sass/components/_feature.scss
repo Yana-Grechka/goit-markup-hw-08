@@ -1,0 +1,33 @@
+.feature {
+  padding: 60px 0;
+}
+
+.feature__icon {
+  height: 120px;
+  background-color: var(--lite-grey-color);
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.feature__title {
+  color: var(--black-text);
+  justify-content: center;
+  text-align: center;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.feature__text {
+  color: var(--grey-text);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+}
