@@ -18,6 +18,8 @@
   --border-close: rgba(0, 0, 0, 0.1);
   --cubic: cubic-bezier(0.4, 0, 0.2, 1);
   --border-input: rgba(255, 255, 255, 0.3);
+  --font-body: 'Roboto', sans-serif;
+  --font-logo: 'Raleway', sans-serif;
 }
 
 body {
@@ -1028,6 +1030,10 @@ h6 {
 
 .menu-container {
   position: fixed;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   top: 0;
   left: 0;
   width: 100vw;
@@ -1046,5 +1052,35 @@ h6 {
 .menu-container.is-open {
   -webkit-transform: translateX(0%);
           transform: translateX(0%);
+}
+
+.menu-button__close {
+  position: absolute;
+  top: 40px;
+  right: 5%;
+  border: none;
+  background-color: transparent;
+}
+
+.menu-navigation__list {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 47px;
+  margin-bottom: 306px;
+}
+
+.menu-navigation__item:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.contacts__item--tel {
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 40px;
+  margin-bottom: 32px;
+}
+
+.menu-contacts {
+  margin-bottom: 64px;
 }
 /*# sourceMappingURL=main.css.map */
