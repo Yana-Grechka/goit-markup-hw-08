@@ -28,18 +28,22 @@
 }
 
 @media screen and (max-width: 768px) {
-  .header-nav {
+  .contacts {
+    display: none;
+  }
+
+  .menu {
     display: none;
   }
 }
 
-@media screen and (min-width: 766px) {
-  .header-nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-}
+// @media screen and (min-width: 769px) {
+//   .header-nav {
+//     display: flex;
+//     align-items: center;
+//     justify-content: space-between;
+//   }
+// }
 
 .main-nav {
   position: relative;

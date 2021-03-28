@@ -134,22 +134,11 @@ h6 {
 }
 
 @media screen and (max-width: 768px) {
-  .header-nav {
+  .contacts {
     display: none;
   }
-}
-
-@media screen and (min-width: 766px) {
-  .header-nav {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+  .menu {
+    display: none;
   }
 }
 
@@ -823,6 +812,9 @@ h6 {
 
 .project__img {
   max-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
 }
 
 .project__thumb {
