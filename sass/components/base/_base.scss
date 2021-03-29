@@ -55,14 +55,6 @@ h6 {
   }
 }
 
-.container {
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin: 0 auto;
-  position: relative;
-}
-
 @media screen and (max-width: 768px) {
   .container {
     max-width: 480px;
@@ -83,4 +75,15 @@ h6 {
   text-align: center;
   letter-spacing: 0.03em;
   margin-bottom: 30px;
+}
+
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+    position: relative;
+  }
 }

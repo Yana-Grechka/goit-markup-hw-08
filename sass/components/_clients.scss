@@ -11,26 +11,28 @@
   margin-top: -30px;
 }
 
-
-.clients__link {
+.clients__item {
+  height: 90px;
   display: flex;
   justify-content: center;
   align-items: center;
   margin-left: 30px;
   margin-top: 30px;
-  width: 210px;
-  height: 90px;
   fill: #afb1b8;
   border: 1px solid #afb1b8;
   border-radius: 4px;
   transition: fill 250ms var(--cubic), border 250ms var(--cubic);
 
-  &:hover,
-  &:focus {
-    fill: var(--blue-text);
-    border: 1px solid var(--blue-text);
+  .clients__link {
+    &:hover,
+    &:focus {
+      fill: var(--blue-text);
+      border: 1px solid var(--blue-text);
+    }
   }
 }
+
+
 @media screen and (min-width: 1199px) {
   .clients__link {
     width: 170px;
@@ -45,6 +47,7 @@
 @media screen and (max-width: 767px) {
   .clients__item {
     flex-basis: calc(100% / 2 - 30px);
-    margin: 0 auto;
+    // margin: 0 auto;
+
   }
 }
