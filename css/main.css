@@ -1319,6 +1319,15 @@ h6 {
   margin-bottom: 306px;
 }
 
+.menu-navigation__link {
+  -webkit-transition: color 250ms var(--cubic);
+  transition: color 250ms var(--cubic);
+}
+
+.menu-navigation__link:hover, .menu-navigation__link:focus {
+  color: var(--blue-text);
+}
+
 .menu-navigation__item:not(:last-child) {
   margin-bottom: 32px;
 }

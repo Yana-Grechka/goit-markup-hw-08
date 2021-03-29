@@ -38,6 +38,16 @@
   margin-bottom: 306px;
 }
 
+.menu-navigation__link {
+  transition: color 250ms var(--cubic);
+
+  &:hover,
+  &:focus {
+    color: var(--blue-text);
+  }
+
+}
+
 .menu-navigation__item:not(:last-child) {
   margin-bottom: 32px;
 }
