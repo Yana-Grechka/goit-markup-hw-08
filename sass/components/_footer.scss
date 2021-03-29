@@ -94,6 +94,11 @@
     align-items: baseline;
     justify-content: center;
   }
+  
+  .footer-input {
+    width: 450px;
+    
+  }
 
 
   .footer-address {
@@ -101,7 +106,7 @@
   }
 }
 
-@media screen and (min-width: 1199px) {
+@media screen and (min-width: 1200px) {
   .footer-network {
     margin-left: 70px;
 
