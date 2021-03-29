@@ -150,6 +150,8 @@
 }
 
 .contacts__link {
+  display: flex;
+  align-items: center;
   transition: color 250ms var(--cubic);
 
   &:hover,
