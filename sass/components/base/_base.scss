@@ -55,13 +55,23 @@ h6 {
   }
 }
 
-@media screen and (min-width: 1200px) {
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  position: relative;
+}
+
+@media screen and (max-width: 768px) {
   .container {
-    width: 1200px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin: 0 auto;
-    position: relative;
+    max-width: 480px;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1199px) {
+  .container {
+    max-width: 768px;
   }
 }
 
@@ -74,7 +84,3 @@ h6 {
   letter-spacing: 0.03em;
   margin-bottom: 30px;
 }
-
-// .title--indent {
-//   margin-bottom: 50px;
-// }
