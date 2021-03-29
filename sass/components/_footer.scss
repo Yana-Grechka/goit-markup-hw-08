@@ -91,12 +91,37 @@
   .container--display {
     display: flex;
     flex-wrap: wrap;
+    align-items: baseline;
   }
+
 
   .footer-address {
     margin-right: 165px;
   }
 }
 
+@media screen and (min-width: 1199px) {
+  .footer-network {
+    margin-left: 70px;
+
+  }
+  
+  .footer-address {
+    margin-right: 0;
+  }
+
+  .footer-form {
+    display: flex;
+  }
+
+  .footer-input {
+    width: 358px;
+    margin-right: 12px;
+  }
+
+  .footer-title {
+    text-align: start;
+  }
+}
 // .footer-network {
 // }

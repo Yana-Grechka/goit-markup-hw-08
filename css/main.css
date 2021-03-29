@@ -1178,9 +1178,33 @@ h6 {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
   }
   .footer-address {
     margin-right: 165px;
+  }
+}
+
+@media screen and (min-width: 1199px) {
+  .footer-network {
+    margin-left: 70px;
+  }
+  .footer-address {
+    margin-right: 0;
+  }
+  .footer-form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .footer-input {
+    width: 358px;
+    margin-right: 12px;
+  }
+  .footer-title {
+    text-align: start;
   }
 }
 
