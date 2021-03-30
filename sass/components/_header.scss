@@ -98,18 +98,6 @@
   justify-content: space-between;
 }
 
-.main-nav__social {
-  color: var(--blue-text);
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 22px;
-  display: flex;
-}
-
-.main-nav__social--indent:not(:last-child) {
-  margin-right: 20px;
-}
-
 @media screen and (min-width: 1199px) {
   .main-nav__social {
     display: none;

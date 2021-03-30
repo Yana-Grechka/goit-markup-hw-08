@@ -8,6 +8,7 @@
   padding: 48px 40px;
   background-color: #fff;
   z-index: 999;
+  box-sizing: border-box;
 
   transform: translateX(100%);
   transition: transform 250ms var(--cubic);
@@ -20,7 +21,7 @@
 .menu-button__close {
   position: absolute;
   top: 10px;
-  right: 12%;
+  right: 10px;
   border: none;
   background-color: transparent;
   transition: color 250ms var(--cubic);
@@ -35,7 +36,7 @@
   font-weight: 500;
   font-size: 40px;
   line-height: 47px;
-  margin-bottom: 306px;
+  margin-bottom: 100px;
 }
 
 .menu-navigation__link {
@@ -86,4 +87,28 @@
   font-size: 24px;
   line-height: 28px;
   color: var(--grey-text);
+}
+
+.main-nav__social {
+  color: var(--blue-text);
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  // flex-grow: 1;
+}
+
+.main-nav__social--indent:not(:last-child) {
+  margin-right: 20px;
+}
+
+.main-nav__social--indent:not(:last-child) .mob-social__link::after {
+  content: '';
+  display: inline-flex;
+  width: 1px;
+  height: 22px;
+  background-color: var(--workers-icon);
+  margin-left: 10px;
 }
